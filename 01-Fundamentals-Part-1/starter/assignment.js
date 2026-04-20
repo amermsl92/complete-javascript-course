@@ -6,4 +6,6 @@ let isIslend = true, language;
 
 console.log(typeof(isIslend))
 
+// add things 
+
 
