@@ -8,4 +8,8 @@ console.log(typeof(isIslend))
 
 // add things 
 
+console.log(typeof(country))
+console.log(typeof(isIslend))
+console.log(typeof(isIslend))
+console.log(typeof(isIslend))
 
