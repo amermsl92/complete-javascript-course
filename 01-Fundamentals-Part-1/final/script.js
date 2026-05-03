@@ -371,31 +371,7 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 }
 
 ////////////////////////////////////
-// The switch Statement
-const day = 'friday';
 
-switch (day) {
-  case 'monday': // day === 'monday'
-    console.log('Plan course structure');
-    console.log('Go to coding meetup');
-    break;
-  case 'tuesday':
-    console.log('Prepare theory videos');
-    break;
-  case 'wednesday':
-  case 'thursday':
-    console.log('Write code examples');
-    break;
-  case 'friday':
-    console.log('Record videos');
-    break;
-  case 'saturday':
-  case 'sunday':
-    console.log('Enjoy the weekend :D');
-    break;
-  default:
-    console.log('Not a valid day!');
-}
 
 if (day === 'monday') {
   console.log('Plan course structure');
@@ -466,3 +442,43 @@ const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 */
+
+
+// The switch Statement
+const day = 'friday';
+
+switch (day) {
+  case 'monday': // day === 'monday'
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+        break;
+
+  case 'tuesday':
+    console.log('Prepare theory videos');
+        break;
+
+  case 'wednesday':
+        break;
+
+  case 'thursday':
+    console.log('Write code examples');
+        break;
+
+  case 'friday':
+    console.log('Record videos');
+        break;
+
+  case 'saturday':
+    console.log('Go to the gym');
+        break;
+
+  case 'sunday':
+    console.log('Enjoy the weekend :D');
+        break;
+
+  default:
+    console.log('Not a valid day!');
+}
+let age = 16
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : age <= 10 ?'water 💧':
+age <= 15?'juice � juice': 'nothing'}`);

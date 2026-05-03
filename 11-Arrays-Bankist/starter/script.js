@@ -74,3 +74,51 @@ const currencies = new Map([
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// console.log(arr.splice(0,2))
+
+movements.forEach((movement, index, array) => {
+  if (movement > 0) {
+    console.log(`${index + 1} ssss ${movement} `);
+  } else {
+    console.log(`${index + 1} vvvv ${Math.abs(movement)}`);
+  }
+});
+
+const euroToUsd = 1.1;
+console.log(
+  movements.map(movement => {
+    return Math.abs(movement);
+  }),
+);
+
+console.log(
+  movements.filter(movement => {
+    return movement > 0;
+  }),
+);
+console.log(
+  movements.reduce((acc, movement) => {
+    return acc + movement;
+  }, -10),
+);
+
+console.log(movements.filter(mov => mov < 0));
+console.log(movements.find(mov => mov < 0));
+
+console.log(movements.some(move => move > 50));
+
+const arr = [
+  [[1, 2, 5], 3],
+  7,
+  8,
+  9,
+  [
+    [1, 8],
+    [5, 9, 9, [19, 50], [50, 8, 8, [6, 6, 9, [5, 6, 9, 8], 1, [1, 8, 9]]]],
+  ],
+];
+
+console.log(arr.flat(5).flatMap(move => move +11 ));

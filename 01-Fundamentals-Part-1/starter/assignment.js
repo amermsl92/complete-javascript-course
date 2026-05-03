@@ -9,3 +9,4 @@ console.log(typeof(isIslend))
 // add things 
 
 
+const str = `bn`; 
